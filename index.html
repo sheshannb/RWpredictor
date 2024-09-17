@@ -51,6 +51,12 @@
     </div>
 
     <script>
+
+        // Check login status
+        if (localStorage.getItem('isLoggedIn') !== 'true') {
+            window.location.href = 'login.html'; // Redirect to login page
+        }
+
         const numberMappings = {
             0: [1, 2, 3, 10, 17, 18, 20, 30, 35],
             1: [0, 10, 29, 36],
